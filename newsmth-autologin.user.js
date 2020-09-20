@@ -17,7 +17,7 @@
 /* eslint no-extra-semi: "warn" */
 
 ;               // eslint-disable-line
-(function () {
+function __start__(input_username, input_password) {
     "use strict";
 
     // Your code here...
@@ -249,7 +249,6 @@
     } else if (/mitbbs\.com$/.test(document.location.host)){
         o = undefined;
     } else if (document.location.host == 'm.newsmth.net'){
-	alert('here');
         o = $('div#ad_container')
         if (o) {
             o.innerHTML = ''
@@ -283,7 +282,7 @@
         }
         //end of code for m.newsmth.net
     }
-})();
+}
 
 
 //  Cookie sample
