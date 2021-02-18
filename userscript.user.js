@@ -38,7 +38,7 @@ function __start__(...args) {
     //__start__(['site_c18', 'pre']);
     const site_c18 = (tag) => {
         tag = tag || 'body';
-        $(tag).innerHTML = $(tag).innerHTML.replace(/>[^<>]*</gi, m=>m.replace(/https?:\/\/[^\s]+/gi, m=>`<a href="${m}" target="_blank">${m}</a>`));
+        $(tag).innerHTML = $(tag).innerHTML.replace(/>[^<>]*</gi, m=>m.replace(/https?:\/\/[^\s<>]+/gi, m=>`<a href="${m}" target="_blank">${m}</a>`));
     }
 
     args.forEach( va=>eval(va.shift()).apply(null, va) );
