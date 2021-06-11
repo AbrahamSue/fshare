@@ -248,7 +248,7 @@ function __start__(input_username, input_password) {
         o = $('div.container-lg').style ('max-width: 100%');
     } else if (/mitbbs\.com$/.test(document.location.host)){
         o = undefined;
-    } else if (document.location.host == 'm.newsmth.net'){
+    } else if (document.location.host == 'm.newsmth.net' || document.location.host == 'm.mysmth.net'){
         o = $('div#ad_container')
         if (o) {
             o.innerHTML = ''
